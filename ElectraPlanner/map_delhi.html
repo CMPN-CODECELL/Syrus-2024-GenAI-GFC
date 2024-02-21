@@ -38,6 +38,10 @@
             margin-top: 10px; /* Reduce space between paragraphs */
             padding: 0 20px; /* Add padding to the left and right sides */
         }
+        /* Custom CSS for the second paragraph */
+        .wide-paragraph {
+            padding: 0 20px; /* Add padding to the left and right sides */
+        }
     </style>
 </head>
 <body>
@@ -49,5 +53,17 @@
     <h3><a href='../map_delhi_ev_station_plot.html'>View full map</a></h3>
 
     <p>The map showcases potential sites for EV charging stations. It serves as a planning tool, aiding in the identification of high-demand areas based on factors like population density and proximity to key destinations. This visualization facilitates collaborative decision-making among stakeholders and ensures that charging points are strategically placed to enhance accessibility and meet the evolving needs of the community.</p>
+
+    <h2>Prospective spots for Charging point installation</h2>
+    <div class="container">
+        <!-- Embed the second map within a limited area using an iframe -->
+        <iframe src="../attraction.html"></iframe>
+    </div>
+    <h3><a href='../attraction.html'>View full map</a></h3>
+    
+    <!-- Second paragraph with wide alignment -->
+    <p class="wide-paragraph">This map showcases attractions near which EV charging points can be added. Reason being, it takes at least an hour or two for the EVs to get charged. Meanwhile users would want to spend their time indulging in fun activities or work, which is why it would be beneficial to have attractions near these spots, thus allowing customers to have a better experience. Also the existing infrastructure suggests that enclosed spaces like parking lots are better option for this purpose as they are much safer for this purpose.</p>
+
 </body>
 </html>
+

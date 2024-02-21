@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EV Statistics Report</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            padding: 20px;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #FFA500; /* Orange color */
+            margin-bottom: 10px;
+        }
+        .report-icon {
+            font-size: 48px;
+            color: #FF7F50; /* A shade darker than orange */
+            margin-bottom: 20px;
+        }
+        p {
+            color: #666; /* Dark gray */
+            margin-top: 20px;
+        }
+        iframe {
+            width: 100%;
+            height: calc(100vh - 400px);
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-chart-bar report-icon"></i> EV Statistics Report</h1>
+        <iframe src="https://app.powerbi.com/reportEmbed?reportId=4e53592b-f218-41c1-9c25-5f15a546f8dd&autoAuth=true&ctid=cca3f0fe-586f-4426-a8bd-b8146307e738" frameborder="0" allowFullScreen="true"></iframe>
+        <p>These are the yearly figures for EV penetration, sales and their comparison to automobile sales</p>
+    </div>
+</body>
+</html>
