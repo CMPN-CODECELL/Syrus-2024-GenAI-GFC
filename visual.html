@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualization Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fffaf0; /* Pale orange */
+            color: #333; /* Dark grey */
+            margin: 0;
+            padding: 20px;
+            text-align: center; /* Center align all text */
+        }
+        h1, p, ul {
+            text-align: center; /* Center align heading, paragraphs, and unordered lists */
+        }
+        h1 {
+            color: #FFA500; /* Orange color */
+        }
+        img {
+            display: block;
+            margin: 0 auto; /* Center align image */
+            width: 80%; /* Adjust image width */
+            max-width: 500px;
+            padding-top: 20px; /* Add some space below heading */
+        }
+        .additional-info {
+            margin-top: 20px; /* Add margin from top */
+            text-align: center; /* Center align additional info paragraph */
+        }
+        .sentiment-analysis {
+            margin: 0 auto; /* Center align sentiment analysis div */
+            max-width: 80%; /* Adjust maximum width */
+            text-align: justify; /* Justify text within sentiment analysis div */
+        }
+        .centered-paragraph {
+            text-align: center;
+        }
+
+
+        hr {
+            border: none;
+            border-top: 1px solid #ccc; /* Add border-top */
+            margin: 20px auto; /* Center align and add margin */
+            max-width: 80%; /* Adjust maximum width */
+        }
+    </style>
+</head>
+<body>
+    <h1>Visualization Results</h1>
+    <img src="ElectraPlanner/gan_v.jpeg" alt="GAN Visualization">
+    <p class="additional-info">The blue line indicates the initial data fed into the model, which was used to predict further data represented in red. This predictive analysis allows us to forecast the data for the next 10 months based on the previous data.</p>
+
+    <hr> <!-- Horizontal line -->
+    <div class="sentiment-analysis">
+        <p><strong>Sentiment Analysis Results:</strong></p>
+        
+        <p>Mean Squared Error: 9.42e-28. <br>
+            Average Sentiment Score Across All Headlines: 0.21.</p>
+            
+            <div class="centered-paragraph">
+                <p>The remarkably low mean squared error indicates the accuracy of the sentiment analysis model. The average sentiment score of 0.21 suggests a positive sentiment towards electric vehicles (EVs), implying a high demand for EVs in the future.</p>
+            </div>
+    </div>
+</body>
+</html>
