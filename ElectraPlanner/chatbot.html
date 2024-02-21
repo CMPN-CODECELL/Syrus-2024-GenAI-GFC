@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Botpress Chatbot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('car.jpg'); /* Add your background image URL here */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; 
+    background-color: #000000;
+    position: relative; /* Set body to relative positioning */
+}
+
+.chatbot-container {
+    position: absolute; /* Set container to absolute positioning */
+    top: 37%; /* Position from the top */
+    left: 37%; /* Position from the left */
+    transform: translate(-50%, -50%); /* Center the container */
+    width: 90%;
+    height: 80vh;
+    max-width: 800px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+    </style>
+</head>
+<body>
+    <div class="chatbot-container">
+        <iframe srcdoc="<body><script src='https://cdn.botpress.cloud/webchat/v0/inject.js'></script>
+        <script>
+            window.botpressWebChat.init({
+                'composerPlaceholder': 'Chat with EvBot',
+                'botConversationDescription': '',
+                'botName': 'EvBot',
+                'botId': 'd833e1d5-5df4-4fff-984d-2802727b416d',
+                'hostUrl': 'https://cdn.botpress.cloud/webchat/v0',
+                'messagingUrl': 'https://messaging.botpress.cloud',
+                'clientId': 'd833e1d5-5df4-4fff-984d-2802727b416d',
+                'enableConversationDeletion': true,
+                'showPoweredBy': true,
+                'className': 'webchatIframe',
+                'containerWidth': '100%25',
+                'layoutWidth': '100%25',
+                'hideWidget': true,
+                'showCloseButton': false,
+                'disableAnimations': true,
+                'closeOnEscape': false,
+                'showConversationsButton': false,
+                'enableTranscriptDownload': false,
+                'stylesheet':'https://webchat-styler-css.botpress.app/prod/6f41a217-3018-4909-b97d-39a71d74e953/v75743/style.css'
+            });
+            window.botpressWebChat.onEvent(function () { window.botpressWebChat.sendEvent({ type: 'show' }) }, ['LIFECYCLE.LOADED']);
+        </script></body>"
+        width="100%"
+        height="100%">
+        </iframe>
+    </div>
+</body>
+</html>
