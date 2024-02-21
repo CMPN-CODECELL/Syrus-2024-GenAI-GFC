@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xyz</title>
+    <style>
+        /* Custom CSS for pale orange and white theme */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fffaf0; /* Pale orange */
+            color: #333; /* Dark grey */
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        iframe {
+            display: block;
+            margin: 0 auto; /* Center horizontally */
+            width: 90%; /* Adjust width as needed */
+            max-width: 675px; /* Limit the width of the map */
+            height: 450px; /* Set the height of the map */
+            border: 1px solid #ccc; /* Add border */
+        }
+
+        h2, h3 {
+            text-align: center; /* Align heading tags to center */
+            margin-top: 10px; /* Reduce space between heading tags */
+        }
+
+        p {
+            text-align: justify; /* Justify text for neat appearance */
+            line-height: 1.6; /* Increase line height for readability */
+            margin-top: 10px; /* Reduce space between paragraphs */
+            padding: 0 20px; /* Add padding to the left and right sides */
+        }
+    </style>
+</head>
+<body>
+    <h2>Available Electric Charging Points</h2>
+    <div class="container">
+        <!-- Embed the map within a limited area using an iframe -->
+        <iframe src="../map_delhi_ev_station_plot.html"></iframe>
+    </div>
+    <h3><a href='../map_delhi_ev_station_plot.html'>View full map</a></h3>
+
+    <p>The map showcases potential sites for EV charging stations. It serves as a planning tool, aiding in the identification of high-demand areas based on factors like population density and proximity to key destinations. This visualization facilitates collaborative decision-making among stakeholders and ensures that charging points are strategically placed to enhance accessibility and meet the evolving needs of the community.</p>
+</body>
+</html>
